@@ -1,7 +1,16 @@
 import "./index.css";
 
-export default Index = () =>{
-    
+const Sidebar = () => {
+    return (
+        <div className="container-fluid sidebar-section">
+            <div className="sidebar">
+                Sidebar
+            </div>
+            <div className="container">
+                Container
+            </div>
+        </div>
+    )
 }
 
-
+export default Sidebar;

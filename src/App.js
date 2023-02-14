@@ -1,8 +1,14 @@
 import React from "react";
 
+import Home from "./Components/Home";
+import Sidebar from "./Components/Sidebar";
+
 const App = () => {
   return (
-    <button className="btn btn-lg btn-info text-light">Hello</button>
+    <>
+      <Sidebar/>
+      <Home/>
+    </>
   )
 }
 
