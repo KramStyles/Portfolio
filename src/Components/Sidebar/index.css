@@ -1,0 +1,19 @@
+.sidebar{
+    background-color: #030303da;
+    height: 100vh;
+}
+.sidebar-section{
+    position: fixed;
+    z-index: 100;
+    transition: .4s ease all;
+    width: 3rem;
+}
+.sidebar-expand{
+    width: 7rem;
+}
+.toggle-sidebar{
+    position: absolute;
+    right: .25rem;
+    cursor: pointer;
+}
+
