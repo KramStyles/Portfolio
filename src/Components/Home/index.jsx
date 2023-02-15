@@ -2,7 +2,7 @@ import "./index.css";
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className="hero bg-success">Home</div>
     )
 }
 
