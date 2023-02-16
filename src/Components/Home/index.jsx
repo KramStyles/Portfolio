@@ -20,9 +20,10 @@ const Home = () => {
                 }/>
             </h3>
             <div>
-                <a href="#" className="btn btn-outline-light btn-sm me-3" type="button">Contact Me <span
+                <a href="#contact" className="btn btn-outline-light btn-sm me-3">Contact Me <span
                     className="btn-icon transit-fast"><CgAbstract/></span></a>
-                <a href={Resume} className="btn btn-light btn-sm fw-bold" type="button">Resume <span
+                <a href={Resume} className="btn btn-light btn-sm fw-bold"
+                   download="Mark Eke Resume - Best Hire.pdf">Resume <span
                     className="btn-icon transit-fast"><CgTranscript/></span></a>
             </div>
         </div>
