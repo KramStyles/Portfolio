@@ -1,8 +1,31 @@
+import Typewriter from 'typewriter-effect'
+
 import "./index.css";
+import Resume from "../../assets/MARK EKE - Resume.pdf"
+import {CgAbstract, CgTranscript} from "react-icons/cg";
 
 const Home = () => {
+    const positions = [
+        "Fullstack (React - Django)",
+        "Backend (Django, Flask)",
+        "Frontend (Vanilla, React)",
+        "WordPress"];
+
     return (
-        <div className="hero bg-dark text-white">Home</div>
+        <div className="hero bg-dark text-white d-flex justify-content-end flex-column raleway">
+            <h1>Mark Eke</h1>
+            <h3 className="text-white-50">
+                <Typewriter options={
+                    {autoStart: true, loop: true, strings: positions}
+                }/>
+            </h3>
+            <div>
+                <a href="#" className="btn btn-outline-light btn-sm me-3" type="button">Contact Me <span
+                    className="btn-icon transit-fast"><CgAbstract/></span></a>
+                <a href={Resume} className="btn btn-light btn-sm fw-bold" type="button">Resume <span
+                    className="btn-icon transit-fast"><CgTranscript/></span></a>
+            </div>
+        </div>
     )
 }
 

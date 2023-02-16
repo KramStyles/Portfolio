@@ -37,6 +37,12 @@ code {
   /*Used this for hiding navbar*/
   width: 0;
 }
+.raleway{
+  font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.poppins{
+  font-family: Poppins, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
 
 /* To Add transition time to elements */
 .transit-medium{

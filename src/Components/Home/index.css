@@ -1,5 +1,8 @@
 .hero{
-    padding: 5rem 10rem;
+    padding: 6rem 1rem 6rem 10rem;
     min-height: 300px;
-    /*background-color: dodgerblue;*/
+}
+
+.hero a:hover .btn-icon{
+    padding-left: 1rem;
 }
