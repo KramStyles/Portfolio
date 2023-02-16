@@ -1,6 +1,10 @@
 :root{
   --transit-fast: .4s ease all;
+  --transit-vfast: .2s ease all;
   --transit-medium: .65s ease all;
+
+  --bg-main-dark: #030303da;
+  --bg-main-dark-hover: #131313da;
 }
 
 body {
@@ -20,9 +24,27 @@ code {
 /*CUSTOM GENERAL CLASSES*/
 .flip--540{
   transform: rotate(540deg);
-  transition: var(--transit-medium);
+  transition: var(--transit-fast);
 }
 .reverse-transition{
   transform: revert;
+  transition: var(--transit-medium);
+}
+.fs-7{
+  font-size: 0.7rem;
+}
+.w-0{
+  /*Used this for hiding navbar*/
+  width: 0;
+}
+
+/* To Add transition time to elements */
+.transit-medium{
+  transition: var(--transit-medium);
+}
+.transit-vfast{
+  transition: var(--transit-vfast);
+}
+.transit-fast{
   transition: var(--transit-fast);
 }

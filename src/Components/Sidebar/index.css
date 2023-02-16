@@ -5,11 +5,11 @@
 .sidebar-section{
     position: fixed;
     z-index: 100;
-    transition: .4s ease all;
+    transition: var(--transit-vfast);
     width: 3rem;
 }
 .sidebar-expand{
-    width: 7rem;
+    width: 9rem;
 }
 .toggle-sidebar{
     position: absolute;
@@ -17,3 +17,34 @@
     cursor: pointer;
 }
 
+.sidebar-img{
+    width: 75%;
+    margin-top: 2rem;
+    border: 2px solid white;
+}
+.sidebar-content{
+    margin-top: 10rem;
+}
+.sidebar-content a svg{
+    font-size: 20px;
+}
+
+.mt--5{
+    margin-top: 5rem;
+    transition: var(--transit-fast);
+}
+.navbar-link-span{
+    display: inline-block;
+}
+
+.nav--item:hover{
+    background-color: var(--bg-main-dark-hover);
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px){
+    .sidebar-icons{
+        height: 60vh;
+        overflow: auto;
+    }
+}
