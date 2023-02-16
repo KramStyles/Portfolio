@@ -26,3 +26,7 @@ code {
   transform: revert;
   transition: var(--transit-fast);
 }
+
+.fs-7{
+  font-size: 0.7rem;
+}

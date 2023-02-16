@@ -9,7 +9,7 @@
     width: 3rem;
 }
 .sidebar-expand{
-    width: 7rem;
+    width: 9rem;
 }
 .toggle-sidebar{
     position: absolute;
@@ -17,3 +17,14 @@
     cursor: pointer;
 }
 
+.sidebar-img{
+    width: 75%;
+    margin-top: 2rem;
+    border: 2px solid white;
+}
+.sidebar-content{
+    margin-top: 10rem;
+}
+.sidebar-content a svg{
+    font-size: 20px;
+}
