@@ -1,5 +1,15 @@
 import {useState} from "react";
-import {CgPushChevronRight, CgEditUnmask} from "react-icons/cg";
+import {
+    CgEditUnmask,
+    CgPhone,
+    CgPushChevronRight,
+    CgStack,
+    CgTerminal,
+    CgTikcode,
+    CgTranscript,
+    CgUserlane,
+    CgUserList
+} from "react-icons/cg";
 
 import "./index.css";
 import MarkLogo from "../../assets/images/mark.JPG";
@@ -19,19 +29,19 @@ const Sidebar = () => {
             <div className="sidebar">
                 <div className="position-absolute my-5 d-flex justify-content-center">
                     <img src={MarkLogo} alt="Picture of Mark Smiling." className="sidebar-img rounded"/>
-                     <div className="position-absolute sidebar-content d-flex">
-                         <div className="sidebar-icons">
-                             <NavItems icon={<CgEditUnmask />} name="home" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="about me" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="experience" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="tech stack" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="education" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="projects" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="testimonial" hide={!expandSidebar}/>
-                             <NavItems icon={<CgEditUnmask />} name="contact" hide={!expandSidebar}/>
-                         </div>
+                    <div className={`position-absolute sidebar-content d-flex ${!expandSidebar ? "mt--5" : ""}`}>
+                        <div className="sidebar-icons">
+                            <NavItems icon={<CgEditUnmask/>} name="home" hide={!expandSidebar}/>
+                            <NavItems icon={<CgUserList/>} name="about me" hide={!expandSidebar}/>
+                            <NavItems icon={<CgUserlane/>} name="experience" hide={!expandSidebar}/>
+                            <NavItems icon={<CgTerminal/>} name="tech stack" hide={!expandSidebar}/>
+                            <NavItems icon={<CgStack/>} name="education" hide={!expandSidebar}/>
+                            <NavItems icon={<CgTikcode/>} name="projects" hide={!expandSidebar}/>
+                            <NavItems icon={<CgTranscript/>} name="testimonial" hide={!expandSidebar}/>
+                            <NavItems icon={<CgPhone/>} name="contact" hide={!expandSidebar}/>
+                        </div>
 
-                </div>
+                    </div>
                 </div>
 
             </div>
