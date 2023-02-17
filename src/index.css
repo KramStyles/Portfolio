@@ -30,8 +30,18 @@ code {
   transform: revert;
   transition: var(--transit-medium);
 }
+.text-justify{
+  text-align: justify;
+}
+.line{
+  border-bottom: 2px solid var(--bg-main-dark-hover);
+  margin-bottom: 1rem;
+}
 .fs-7{
   font-size: 0.7rem;
+}
+.fs-8{
+  font-size: 0.85rem;
 }
 .w-0{
   /*Used this for hiding navbar*/

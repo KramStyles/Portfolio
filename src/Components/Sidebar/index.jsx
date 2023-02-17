@@ -12,7 +12,7 @@ import {
 } from "react-icons/cg";
 
 import "./index.css";
-import MarkLogo from "../../assets/images/mark.JPG";
+import MarkLogo from "../../assets/images/mark.png";
 import NavItems from "./NavItems";
 
 const Sidebar = () => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
             </div>
             <div className="sidebar">
                 <div className="position-absolute my-5 d-flex justify-content-center">
-                    <img src={MarkLogo} alt="Mark Smiling." className="sidebar-img rounded"/>
+                    <img src={MarkLogo} alt="Mark Smiling." className="sidebar-img rounded-circle"/>
                     <div className={`position-absolute sidebar-content d-flex ${!expandSidebar ? "mt--5" : ""}`}>
                         <div className="sidebar-icons">
                             <NavItems icon={<CgEditUnmask/>} name="home" hide={!expandSidebar}/>
