@@ -5,4 +5,17 @@
     background-color: var(--bg-main-dark);
     color: snow;
     font-weight: bold;
+    box-shadow: -15px 10px 15px -2px #666 !important;
+}
+
+.tech-index{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -10px;
 }

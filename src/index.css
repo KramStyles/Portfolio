@@ -72,6 +72,9 @@ code {
     /*Used this for hiding navbar*/
     width: 0;
 }
+.button:hover .btn-icon{
+    padding-left: 1rem;
+}
 
 .raleway {
     font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
