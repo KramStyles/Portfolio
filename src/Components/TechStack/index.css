@@ -3,9 +3,8 @@
 }
 .tech-stack:hover{
     background-color: var(--bg-main-dark);
-    color: snow;
     font-weight: bold;
-    box-shadow: -15px 10px 15px -2px #666 !important;
+    box-shadow: -5px 5px 5px -2px #666 !important;
 }
 
 .tech-index{

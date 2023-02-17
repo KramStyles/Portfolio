@@ -23,7 +23,7 @@ const Sidebar = () => {
 
     return (
         <div className={`sidebar-section ${expandSidebar ? "sidebar-expand" : ""}`}>
-            <div className="toggle-sidebar fw-bold text-white py-4" onClick={toggleSidebar}>
+            <div className="toggle-sidebar fw-bold text-white py-4 vibrate" onClick={toggleSidebar}>
                 <CgPushChevronRight size={20} className={`${expandSidebar ? "flip--540" : "reverse-transition"}`}/>
             </div>
             <div className="sidebar">

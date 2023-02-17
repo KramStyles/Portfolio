@@ -5,7 +5,9 @@
 
     --bg-main-dark: #030303da;
     --bg-main-dark-hover: #131313da;
+    --bg-main-white-hover: #5555554a;
     --bg-top-dark: #090909;
+    --bg-gradient-dark: linear-gradient(#090909, #111);
 }
 
 body {
@@ -35,6 +37,9 @@ body {
 }
 .my-shadow-image-light {
     box-shadow: 0 5px 20px -20px rgba(240, 240, 240, 0.56), 0 4px 25px 0px rgba(240, 240, 240, 0.12), 0 8px 10px -5px rgba(240, 240, 240, 0.2);
+}
+.bg-linear-dark{
+    background: var(--bg-gradient-dark);
 }
 
 code {
@@ -76,11 +81,21 @@ code {
     font-family: Raleway, sans-serif;
 }
 
-.line-title {
+.line-title-dark, .line-title-white {
     padding: .1rem;
     border-bottom: 2px solid var(--bg-main-dark);
     width: 20%;
     margin: auto;
+}
+
+.text-behind-dark{
+    font-size: 5rem;
+    opacity: .03;
+    color: white;
+}
+
+.line-title-white{
+    border-color: white;
 }
 
 .fs-7 {
@@ -126,10 +141,16 @@ code {
         margin-bottom: 2rem;
     }
     .line-white, .line{
-        padding: 10px 0;
+        padding: 13px 0;
     }
     .my-image{
         width: 100%;
-
+    }
+    .container{
+        width: 95%;
+    }
+    .fs-7{
+        font-size: 0.85rem;
+        padding: 10px 5px;
     }
 }
