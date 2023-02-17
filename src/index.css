@@ -1,66 +1,95 @@
-:root{
-  --transit-fast: .4s ease all;
-  --transit-vfast: .2s ease all;
-  --transit-medium: .65s ease all;
+:root {
+    --transit-fast: .4s ease all;
+    --transit-vfast: .2s ease all;
+    --transit-medium: .65s ease all;
 
-  --bg-main-dark: #030303da;
-  --bg-main-dark-hover: #131313da;
+    --bg-main-dark: #030303da;
+    --bg-main-dark-hover: #131313da;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 /*CUSTOM GENERAL CLASSES*/
-.flip--540{
-  transform: rotate(540deg);
-  transition: var(--transit-fast);
+.flip--540 {
+    transform: rotate(540deg);
+    transition: var(--transit-fast);
 }
-.reverse-transition{
-  transform: revert;
-  transition: var(--transit-medium);
+
+.reverse-transition {
+    transform: revert;
+    transition: var(--transit-medium);
 }
-.text-justify{
-  text-align: justify;
+
+.text-justify {
+    text-align: justify;
 }
-.line{
-  border-bottom: 2px solid var(--bg-main-dark-hover);
-  margin-bottom: 1rem;
+
+.line, .line-white {
+    border-bottom: 2px solid var(--bg-main-dark-hover);
+    margin-bottom: 1rem;
 }
-.fs-7{
-  font-size: 0.7rem;
+
+.line-white {
+    border-color: white;
 }
-.fs-8{
-  font-size: 0.85rem;
+
+.section {
+    padding: 5rem;
+    min-height: 400px;
 }
-.w-0{
-  /*Used this for hiding navbar*/
-  width: 0;
+.section h3{
+    text-align: center;
+    font-family: Raleway, sans-serif;
 }
-.raleway{
-  font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+.line-title{
+    padding: .1rem;
+    border-bottom: 2px solid var(--bg-main-dark);
+    width: 20%;
+    margin: auto;
 }
-.poppins{
-  font-family: Poppins, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+.fs-7 {
+    font-size: 0.7rem;
+}
+
+.fs-8 {
+    font-size: 0.85rem;
+}
+
+.w-0 {
+    /*Used this for hiding navbar*/
+    width: 0;
+}
+
+.raleway {
+    font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.poppins {
+    font-family: Poppins, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* To Add transition time to elements */
-.transit-medium{
-  transition: var(--transit-medium);
+.transit-medium {
+    transition: var(--transit-medium);
 }
-.transit-vfast{
-  transition: var(--transit-vfast);
+
+.transit-vfast {
+    transition: var(--transit-vfast);
 }
-.transit-fast{
-  transition: var(--transit-fast);
+
+.transit-fast {
+    transition: var(--transit-fast);
 }

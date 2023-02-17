@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./Components/Home";
 import Sidebar from "./Components/Sidebar";
 import About from "./Components/About";
+import TechStack from "./Components/TechStack";
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <Sidebar/>
             <Home/>
             <About/>
+            <TechStack/>
         </>
     )
 }

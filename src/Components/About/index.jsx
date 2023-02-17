@@ -9,7 +9,7 @@ const About = () => {
                     <img src={Image} alt="Mark Eke" className="rounded" width="90%"/>
                 </div>
                 <div className="col-md-6 text-justify fs-7 poppins fw-bold">
-                    <h2 className="text-center line">CODE LOVER</h2>
+                    <h2 className="text-center line raleway">CODE LOVER</h2>
                     <p>As a seasoned software developer with over 6 years of professional experience, programming has
                         been a driving force in my personal and career growth. My expertise lies in Javascript and
                         Python, and I have honed my skills through daily usage and constant improvement over the

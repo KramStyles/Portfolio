@@ -1,0 +1,8 @@
+.tech-stack{
+    cursor: pointer;
+}
+.tech-stack:hover{
+    background-color: var(--bg-main-dark);
+    color: snow;
+    font-weight: bold;
+}
