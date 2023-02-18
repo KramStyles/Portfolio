@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "Pacesetter Frontier",
-        role: "wordpress developer",
+        role: "wordpress",
         stacks: ["python", "numpy", "wordpress", "sqlite3"],
         link: "https://pacesetterfrontier.com/",
         desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus earum fugiat modi quasi quod? 

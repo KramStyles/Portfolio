@@ -10,7 +10,7 @@ const Project = () => {
             <div className="row mt--5">
                 {projects.map((item, index) => {
                     return (
-                        <List project={item} key={index}/>
+                        <List project={item} key={index} index={index}/>
                     )
                 })}
             </div>
