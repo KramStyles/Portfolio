@@ -12,7 +12,7 @@ import {
 } from "react-icons/cg";
 
 import "./index.css";
-import MarkLogo from "../../assets/images/mark.JPG";
+import MarkLogo from "../../assets/images/mark.png";
 import NavItems from "./NavItems";
 
 const Sidebar = () => {
@@ -23,12 +23,12 @@ const Sidebar = () => {
 
     return (
         <div className={`sidebar-section ${expandSidebar ? "sidebar-expand" : ""}`}>
-            <div className="toggle-sidebar fw-bold text-white py-4" onClick={toggleSidebar}>
+            <div className="toggle-sidebar fw-bold text-white py-4 vibrate" onClick={toggleSidebar}>
                 <CgPushChevronRight size={20} className={`${expandSidebar ? "flip--540" : "reverse-transition"}`}/>
             </div>
             <div className="sidebar">
                 <div className="position-absolute my-5 d-flex justify-content-center">
-                    <img src={MarkLogo} alt="Mark Smiling." className="sidebar-img rounded"/>
+                    <img src={MarkLogo} alt="Mark Smiling." className="sidebar-img rounded-circle"/>
                     <div className={`position-absolute sidebar-content d-flex ${!expandSidebar ? "mt--5" : ""}`}>
                         <div className="sidebar-icons">
                             <NavItems icon={<CgEditUnmask/>} name="home" hide={!expandSidebar}/>

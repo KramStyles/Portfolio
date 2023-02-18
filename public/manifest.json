@@ -3,17 +3,17 @@
   "name": "Mark Eke Portfolio and Online Resume",
   "icons": [
     {
-      "src": "mark.JPG",
+      "src": "mark.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "mark.JPG",
+      "src": "mark.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "mark.JPG",
+      "src": "mark.png",
       "type": "image/png",
       "sizes": "512x512"
     }

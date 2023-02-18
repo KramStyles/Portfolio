@@ -12,7 +12,7 @@ const Home = () => {
         "WordPress"];
 
     return (
-        <div className="hero bg-dark text-white d-flex justify-content-end flex-column raleway">
+        <div className="hero text-white d-flex justify-content-end flex-column raleway">
             <h1>Mark Eke</h1>
             <h3 className="text-white-50">
                 <Typewriter options={

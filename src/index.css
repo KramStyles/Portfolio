@@ -1,56 +1,156 @@
-:root{
-  --transit-fast: .4s ease all;
-  --transit-vfast: .2s ease all;
-  --transit-medium: .65s ease all;
+:root {
+    --transit-fast: .4s ease all;
+    --transit-vfast: .2s ease all;
+    --transit-medium: .65s ease all;
 
-  --bg-main-dark: #030303da;
-  --bg-main-dark-hover: #131313da;
+    --bg-main-dark: #030303da;
+    --bg-main-dark-hover: #131313da;
+    --bg-main-white-hover: #5555554a;
+    --bg-top-dark: #090909;
+    --bg-gradient-dark: linear-gradient(#090909, #111);
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-top-dark);
+}
+
+.bg--dark {
+    background-color: var(--bg-top-dark);
+}
+
+.my-shadow-dark {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.my-shadow-light {
+    box-shadow: 0 2px 2px 0 rgb(250 250 250 / 14%), 0 3px 1px -2px rgb(250 250 250 / 20%), 0 1px 5px 0 rgb(250 250 250 / 12%);
+}
+
+.my-shadow-image-dark {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.my-shadow-image-light {
+    box-shadow: 0 5px 20px -20px rgba(240, 240, 240, 0.56), 0 4px 25px 0px rgba(240, 240, 240, 0.12), 0 8px 10px -5px rgba(240, 240, 240, 0.2);
+}
+.bg-linear-dark{
+    background: var(--bg-gradient-dark);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 /*CUSTOM GENERAL CLASSES*/
-.flip--540{
-  transform: rotate(540deg);
-  transition: var(--transit-fast);
+.flip--540 {
+    transform: rotate(540deg);
+    transition: var(--transit-fast);
 }
-.reverse-transition{
-  transform: revert;
-  transition: var(--transit-medium);
+
+.reverse-transition {
+    transform: revert;
+    transition: var(--transit-medium);
 }
-.fs-7{
-  font-size: 0.7rem;
+
+.text-justify {
+    text-align: justify;
 }
-.w-0{
-  /*Used this for hiding navbar*/
-  width: 0;
+
+.line, .line-white {
+    border-bottom: 2px solid var(--bg-main-dark-hover);
+    margin-bottom: 1rem;
 }
-.raleway{
-  font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+.line-white {
+    border-color: white;
 }
-.poppins{
-  font-family: Poppins, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+.section {
+    padding: 5rem;
+    min-height: 400px;
+}
+
+.section h3 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+}
+
+.line-title-dark, .line-title-white {
+    padding: .1rem;
+    border-bottom: 2px solid var(--bg-main-dark);
+    width: 20%;
+    margin: auto;
+}
+
+.text-behind-dark{
+    font-size: 5rem;
+    opacity: .03;
+    color: white;
+}
+
+.line-title-white{
+    border-color: white;
+}
+
+.fs-7 {
+    font-size: 0.7rem;
+}
+
+.fs-8 {
+    font-size: 0.85rem;
+}
+
+.w-0 {
+    /*Used this for hiding navbar*/
+    width: 0;
+}
+
+.button:hover .btn-icon {
+    padding-left: 1rem;
+}
+
+.raleway {
+    font-family: Raleway, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.poppins {
+    font-family: Poppins, 'Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* To Add transition time to elements */
-.transit-medium{
-  transition: var(--transit-medium);
+.transit-medium {
+    transition: var(--transit-medium);
 }
-.transit-vfast{
-  transition: var(--transit-vfast);
+
+.transit-vfast {
+    transition: var(--transit-vfast);
 }
-.transit-fast{
-  transition: var(--transit-fast);
+
+.transit-fast {
+    transition: var(--transit-fast);
+}
+
+@media screen and (max-width: 800px){
+    .mb--sm-2{
+        margin-bottom: 2rem;
+    }
+    .line-white, .line{
+        padding: 13px 0;
+    }
+    .my-image{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .fs-7{
+        font-size: 0.85rem;
+        padding: 10px 5px;
+    }
 }
