@@ -2,6 +2,7 @@ import {useState} from "react";
 import {CgAnchor} from "react-icons/cg";
 
 import "./index.css";
+import Title from "../Elements/title";
 
 const TechStack = () => {
     const [showMoreStack, setShowMoreStack] = useState(9);
@@ -16,11 +17,7 @@ const TechStack = () => {
     }
     return (
         <div className="container shadow section position-relative">
-            <div className="position-absolute w-75">
-                <h1 className="text-center text-behind-dark">SKILLS</h1>
-            </div>
-            <h3 className="text-white-50">Tech Stack</h3>
-            <div className="line-title-white"/>
+            <Title backgroundTitle="skills" title="tech stack"/>
             <div className="row my-5 justify-content-center">
                 {techStack.slice(0, showMoreStack).map((item, index) => {
                     let randomNumber = Math.random().toFixed(2);
