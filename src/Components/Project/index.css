@@ -1,0 +1,16 @@
+.point-img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40%;
+    opacity: .5;
+    filter: invert(100%);
+}
+.top-point-img{
+    top: 10px;
+    width: 20%;
+}
+.bottom-button{
+    bottom: 10px;
+    position: absolute;
+}

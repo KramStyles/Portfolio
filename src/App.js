@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Sidebar from "./Components/Sidebar";
 import About from "./Components/About";
 import TechStack from "./Components/TechStack";
+import Project from "./Components/Project";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Home/>
             <About/>
             <TechStack/>
+            <Project/>
         </>
     )
 }
