@@ -1,11 +1,15 @@
 import Onochie from "../../assets/images/reviews/onochie.jpg";
+import John from "../../assets/images/reviews/john.jpg"
+import Hope from "../../assets/images/reviews/hope.jpg"
+import Kosi from "../../assets/images/reviews/kosi1.jpg"
+import Emma from "../../assets/images/reviews/kosi.jpg"
 
 const images = {
     onochie: Onochie,
-    john: Onochie,
-    hope: Onochie,
-    emmanuel: Onochie,
-    kosi: Onochie,
+    john: John,
+    hope: Hope,
+    emmanuel: Emma,
+    kosi: Kosi,
 }
 
 const Reviews = ({name, picture, position, review}) => (

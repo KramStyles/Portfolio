@@ -45,7 +45,7 @@ export const reviews = [
                  beyond to ensure the final product was exactly what I wanted.`
     },
     {
-        name: "Mr. Emmanuel Ogochukwu",
+        name: "Mr. Emmanuel Ogo.",
         picture: "emmanuel",
         position: "UI/UX Designer, Dro Health",
         review: `I highly recommend Mark Eke for any web development needs. He is incredibly knowledgeable and always 
