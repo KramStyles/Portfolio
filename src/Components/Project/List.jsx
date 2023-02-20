@@ -3,7 +3,8 @@ import {CgWebsite} from "react-icons/cg";
 
 const List = ({project, index}) => {
     return (
-        <div className="col-md-4 rounded text-white p-2 position-relative poppins">
+        // Made it col-md-12 instead of 4 because it can arrange it self i.e use effect to check width and resize
+        <div className="col-md-12 rounded text-white p-2 position-relative poppins">
             <div className="glass-morphic-content transit-medium">
                 <p className="text-white-50 fs-6 text-uppercase">{project.role}</p>
                 <h2 className="raleway">{project.name}</h2>
