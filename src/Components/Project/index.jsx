@@ -5,19 +5,10 @@ import "./index.css";
 import {projects} from "../Data";
 import List from "./List"
 import Title from "../Elements/title";
+import {HandleWidth} from "../../Utils";
 
 const Project = () => {
-    const [width, setWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () =>{
-            setWidth(window.innerWidth);
-        };
-        window.addEventListener("resize", handleResize);
-        return () =>{
-            window.removeEventListener("resize", handleResize);
-        };
-    }, [])
+    const width = HandleWidth();
 
     const sliderSettings = {
         dots: true,

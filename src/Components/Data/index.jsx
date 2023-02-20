@@ -53,7 +53,7 @@ export const reviews = [
                  providing high-quality work is evident in the final product.`
     },
         {
-        name: "Mr. Kosi Chatbot",
+        name: "Mr. Kosi Okonkwo",
         picture: "kosi",
         position: "Game Developer, Digital Dreams",
         review: `I had the pleasure of working with Mark Eke on a complex project and was blown away by his 

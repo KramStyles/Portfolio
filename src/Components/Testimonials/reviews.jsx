@@ -1,8 +1,10 @@
+import {CgLivePhoto, CgTally} from "react-icons/cg";
+
 import Onochie from "../../assets/images/reviews/onochie.jpg";
 import John from "../../assets/images/reviews/john.jpg"
 import Hope from "../../assets/images/reviews/hope.jpg"
 import Kosi from "../../assets/images/reviews/kosi1.jpg"
-import Emma from "../../assets/images/reviews/kosi.jpg"
+import Emma from "../../assets/images/reviews/emma.jpeg"
 
 const images = {
     onochie: Onochie,
@@ -23,9 +25,11 @@ const Reviews = ({name, picture, position, review}) => (
                     <h5 className="raleway mb-0">{name}</h5>
                     <p className={"fs-8"}>{position}.</p>
                 </div>
+                <CgLivePhoto size={30}/>
             </div>
-            <div>
-                <p className={"fs-7 text-white fw-bold text-center poppins mt-3"}>{review}</p>
+            <div className={"text-center"}>
+                <p className={"fs-7 text-white fw-bold poppins mt-3"}>{review}</p>
+                <CgTally className={"tally"} size={20}/>
             </div>
         </div>
     </div>

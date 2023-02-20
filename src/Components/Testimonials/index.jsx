@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 
+import "./index.css";
 import {HandleWidth} from "../../Utils";
 import Title from "../Elements/title";
 import {reviews} from "../Data";
