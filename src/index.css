@@ -71,6 +71,9 @@ code {
 .glass-morphic-content:hover .line-white, .glass-morphic-content:hover .line-dark{
     width: 100%;
 }
+.min-height-25{
+    min-height: 250px;
+}
 
 .reverse-transition {
     transform: revert;
