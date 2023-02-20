@@ -65,14 +65,17 @@ code {
     box-shadow: 0 2px 3px 1px rgba(255, 255, 255, 0.2);
     min-height: 400px;
 }
-.glass-morphic-content:hover{
+
+.glass-morphic-content:hover {
     background: linear-gradient(rgba(250, 250, 250, 0.05), black);
 }
-.glass-morphic-content:hover .line-white, .glass-morphic-content:hover .line-dark{
+
+.glass-morphic-content:hover .line-white, .glass-morphic-content:hover .line-dark {
     width: 100%;
 }
-.min-height-25{
-    min-height: 250px;
+
+.min-height-25 {
+    min-height: 280px;
 }
 
 .reverse-transition {
@@ -158,7 +161,7 @@ code {
     transition: var(--transit-fast);
 }
 
-.line-left-white{
+.line-left-white {
     border-left: 2px solid white;
     padding-left: 10px;
 }
@@ -168,16 +171,20 @@ code {
         margin-bottom: 2rem;
     }
 
-    .section, .about-section{
+    .section, .about-section {
         padding: 3.5rem !important;
     }
 
-    .text-behind-dark{
+    .text-behind-dark {
         font-size: 4rem;
     }
 
     .line-white, .line {
         padding: 13px 0;
+    }
+
+    .min-height-25 {
+        min-height: 350px;
     }
 
     .my-image {
