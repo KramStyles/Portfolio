@@ -1,3 +1,28 @@
+export const experiences = [
+    {
+        name: "HNDWOK",
+        role: "Backend",
+        stacks: ["Python", "PostgreSQL", "DRF"],
+        period: "Dec, 2022",
+        desc: `<li>Contributed to the development of the company’s major software product connecting artisans to 
+                    thousands of jobs within Nigeria.</li>
+                <li> Enriched system metrics by introducing adequate unit and integration tests with PyTest thereby reducing 
+                    bug reports and system failures by 13%</li>`,
+    },
+    {
+        name: "Dro Health",
+        role: "Backend",
+        stacks: ["Python", "PostgreSQL", "DRF", "celery", "RabbitMQ"],
+        period: "Jun, 2022 - Dec, 2022",
+        desc: `<li> Optimized and automated notification logic for the Core team improving communication between doctors,
+                patients and the system. </li>
+               <li>  Integrated multiple third-party systems within the company’s product including Monnify, Paystack, Teams, 
+                Slack and ClickUp increasing revenue by 3%. </li>
+               <li> Implemented custom Doctor Request feature letting users get access to available and unavailable doctors 
+                irrespective of needed specialty ensuring a 20% increase in bookings.</li>`
+    },
+]
+
 export const projects = [
     {
         name: "Pacesetter Frontier",
