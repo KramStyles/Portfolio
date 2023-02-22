@@ -5,6 +5,16 @@
     padding: 10px !important;
 }
 
+.exp-item-content li{
+    list-style-type: none;
+    padding: 5px;
+    font-size: .8rem;
+    text-align: justify;
+    border-right: 1px solid #666666;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
 @media screen and (max-width: 1000px){
     .vertical-date{
         padding: 0;
