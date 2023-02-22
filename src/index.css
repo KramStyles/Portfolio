@@ -8,6 +8,7 @@
     --bg-main-white-hover: #5555554a;
     --bg-top-dark: #090909;
     --bg-gradient-dark: linear-gradient(#090909, #111);
+    --bg-gradient-light: linear-gradient(snow, silver);
 }
 
 body {

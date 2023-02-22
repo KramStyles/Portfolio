@@ -1,0 +1,14 @@
+.vertical-date{
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    color: white;
+    padding: 10px !important;
+}
+
+@media screen and (max-width: 1000px){
+    .vertical-date{
+        padding: 0;
+        color: #090909;
+        font-weight: bold !important;
+    }
+}
