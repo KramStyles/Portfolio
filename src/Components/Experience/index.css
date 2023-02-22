@@ -7,12 +7,20 @@
 
 .exp-item-content li{
     list-style-type: none;
-    padding: 5px;
+    padding: 5px 15px 5px 5px;
     font-size: .8rem;
     text-align: justify;
     border-right: 1px solid #666666;
     margin-bottom: 10px;
     border-radius: 2px;
+}
+
+.exp-item-content{
+    height: 80px;
+    overflow:hidden;
+}
+.exp-height{
+    height: auto;
 }
 
 @media screen and (max-width: 1000px){
