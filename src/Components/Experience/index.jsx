@@ -8,7 +8,7 @@ import {experiences} from "../Data";
 import Title from "../Elements/title";
 import Buttons from "../Elements/buttons";
 
-const ExpList = ({desc}) => {
+const ExpList = ({desc, stack}) => {
     const [more, setMore] = useState(false);
     const checkMore = () => {
         setMore(!more);
@@ -17,9 +17,15 @@ const ExpList = ({desc}) => {
         <>
             <div dangerouslySetInnerHTML={{__html: desc}}
                  className={`exp-item-content transit-fast ${more ? "exp-height" : ""}`}/>
+            <div className="my-2">
+                {stack ? stack.map((item, index) => (
+                    <span className={`badge rounded-pill m-0 ${index%2 ? 'badge--dark' : 'badge--light'}`}
+                          key={index}>{item}</span>
+                )): null}
+            </div>
             {
                 desc.length >= 150 ? (
-                    <Buttons btnIcon={<CgStark/>} btnText={"Show More"}
+                    <Buttons btnIcon={<CgStark/>} btnText={`Show ${more ? 'Less' : 'More'}`}
                              moreClass={"btn-outline-dark mt-3"} onclick={checkMore}/>
                 ) : null
             }
@@ -52,7 +58,7 @@ const Experience = () => {
                         >
                             <h3 className="vertical-timeline-element-title text-start">{item.name}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{item.role}</h4>
-                            <ExpList desc={item.desc}/>
+                            <ExpList desc={item.desc} stack={item.stacks}/>
                         </VerticalTimelineElement>
                     )
                 })}

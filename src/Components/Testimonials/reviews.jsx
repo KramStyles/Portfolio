@@ -17,11 +17,11 @@ const images = {
 const Reviews = ({name, picture, position, review}) => (
     <div className="col-md-12 col-sm-12 p-2">
         <div className="glass-morphic-content transit-medium min-height-25 d-flex flex-column justify-content-between">
-            <div className="d-flex align-items-center justify-content-around">
+            <div className="testimonial-header">
                 <div style={{width: 100, objectFit: "cover"}}>
                     <img src={images[picture]} alt={name} className="rounded-circle img-thumbnail"/>
                 </div>
-                <div className={"text-white"}>
+                <div className={"text-white ms-2"}>
                     <h5 className="raleway mb-0">{name}</h5>
                     <p className={"fs-8"}>{position}.</p>
                 </div>

@@ -11,9 +11,12 @@ const Testimonials = () => {
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToScroll: 1,
         slidesToShow: width < 600 ? 1 : 2,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
     }
     return (
         <div className="container section">

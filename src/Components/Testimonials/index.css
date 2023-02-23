@@ -2,3 +2,17 @@
     position: absolute;
     bottom: 10px;
 }
+
+.testimonial-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px){
+    .testimonial-header{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0;
+    }
+}

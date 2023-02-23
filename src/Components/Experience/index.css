@@ -23,6 +23,15 @@
     height: 200px;
     overflow: auto;
 }
+.badge--light, .badge--dark{
+    border: 1px solid #090909;
+    font-family: Raleway, sans-serif;
+    color: #090909;
+}
+.badge--dark{
+    color: whitesmoke;
+    background-color: #090909;
+}
 
 @media screen and (max-width: 1000px){
     .vertical-date{

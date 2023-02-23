@@ -45,6 +45,11 @@ body {
     background: var(--bg-gradient-dark);
 }
 
+/*SLICK FOR DARK BACKGROUND*/
+.slick-dots li button:before{
+    color: white !important;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
