@@ -20,7 +20,8 @@
     overflow:hidden;
 }
 .exp-height{
-    height: auto;
+    height: 200px;
+    overflow: auto;
 }
 
 @media screen and (max-width: 1000px){
