@@ -8,14 +8,27 @@ import {experiences} from "../Data";
 import Title from "../Elements/title";
 import Buttons from "../Elements/buttons";
 
-const Experience = () => {
+const ExpList = ({desc}) => {
     const [more, setMore] = useState(false);
-
     const checkMore = () => {
-        setMore((prevState => (
-            !prevState
-        )));
+        setMore(!more);
     }
+    return (
+        <>
+            <div dangerouslySetInnerHTML={{__html: desc}}
+                 className={`exp-item-content transit-fast ${more ? "exp-height" : ""}`}/>
+            {
+                desc.length >= 150 ? (
+                    <Buttons btnIcon={<CgStark/>} btnText={"Show More"}
+                             moreClass={"btn-outline-dark mt-3"} onclick={checkMore}/>
+                ) : null
+            }
+        </>
+    )
+}
+
+const Experience = () => {
+
     return (
         <div className="container shadow section position-relative">
             <Title backgroundTitle="work" title="Experience"/>
@@ -39,12 +52,7 @@ const Experience = () => {
                         >
                             <h3 className="vertical-timeline-element-title text-start">{item.name}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{item.role}</h4>
-                            <div dangerouslySetInnerHTML={{__html: item.desc}}
-                                 className={`exp-item-content transit-fast ${more ? "exp-height" : ""}`}/>
-                            {item.desc.length >= 150 ? (
-                                <Buttons btnIcon={<CgStark/>} btnText={"Show More"}
-                                         moreClass={"btn-outline-dark mt-3"} onclick={checkMore}/>
-                            ) : null}
+                            <ExpList desc={item.desc}/>
                         </VerticalTimelineElement>
                     )
                 })}
