@@ -8,6 +8,7 @@
     --bg-main-white-hover: #5555554a;
     --bg-top-dark: #090909;
     --bg-gradient-dark: linear-gradient(#090909, #111);
+    --bg-gradient-light: linear-gradient(snow, silver);
 }
 
 body {
@@ -42,6 +43,11 @@ body {
 
 .bg-linear-dark {
     background: var(--bg-gradient-dark);
+}
+
+/*SLICK FOR DARK BACKGROUND*/
+.slick-dots li button:before{
+    color: white !important;
 }
 
 code {
@@ -185,6 +191,10 @@ code {
 
     .min-height-25 {
         min-height: 350px;
+    }
+
+    .hero{
+        padding-left: 4rem !important;
     }
 
     .my-image {

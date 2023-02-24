@@ -1,0 +1,42 @@
+.vertical-date{
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    color: white;
+    padding: 10px !important;
+}
+
+.exp-item-content li{
+    list-style-type: none;
+    padding: 5px 15px 5px 5px;
+    font-size: .8rem;
+    text-align: justify;
+    border-right: 1px solid #666666;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.exp-item-content{
+    height: 80px;
+    overflow:hidden;
+}
+.exp-height{
+    height: 200px;
+    overflow: auto;
+}
+.badge--light, .badge--dark{
+    border: 1px solid #090909;
+    font-family: Raleway, sans-serif;
+    color: #090909;
+}
+.badge--dark{
+    color: whitesmoke;
+    background-color: #090909;
+}
+
+@media screen and (max-width: 1000px){
+    .vertical-date{
+        padding: 0;
+        color: #090909;
+        font-weight: bold !important;
+    }
+}

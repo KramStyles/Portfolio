@@ -16,7 +16,7 @@ import MarkLogo from "../../assets/images/mark.png";
 import NavItems from "./NavItems";
 
 const Sidebar = () => {
-    const [expandSidebar, setExpandSidebar] = useState(true);
+    const [expandSidebar, setExpandSidebar] = useState(false);
     const toggleSidebar = () => (
         setExpandSidebar(!expandSidebar)
     )

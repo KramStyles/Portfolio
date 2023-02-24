@@ -3,6 +3,7 @@ import {CgAnchor} from "react-icons/cg";
 
 import "./index.css";
 import Title from "../Elements/title";
+import Buttons from "../Elements/buttons";
 
 const TechStack = () => {
     const [showMoreStack, setShowMoreStack] = useState(9);
@@ -41,9 +42,7 @@ const TechStack = () => {
             {showMoreStack >= techStack.length ? null : (
                 <div className="row">
                     <div className="col-6 offset-3">
-                        <button type="button" className="btn btn-outline-light btn-sm m-auto d-block button"
-                                onClick={loadMore}>Load More <span
-                            className="btn-icon transit-fast"><CgAnchor/></span></button>
+                        <Buttons btnIcon={<CgAnchor/>} btnText={"Load More"} onclick={loadMore}/>
                     </div>
                 </div>
             )}
