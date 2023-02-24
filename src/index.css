@@ -193,6 +193,10 @@ code {
         min-height: 350px;
     }
 
+    .hero{
+        padding-left: 4rem !important;
+    }
+
     .my-image {
         width: 100%;
     }

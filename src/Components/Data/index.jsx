@@ -53,7 +53,7 @@ export const experiences = [
     },
     {
         name: "GOG Computers",
-        role: "Junior Software Engineer - Part time",
+        role: "Frontend - Part time",
         stacks: ["HTML", "CSS", "Bootstrap", "Javascript", "PHP", "MySQL"],
         period: "Jan, 2013 - Dec, 2018",
         desc: `<li>Leveraged Agile methodology to constantly collaborate and work in iterating designs from

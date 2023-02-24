@@ -11,11 +11,11 @@ const Testimonials = () => {
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 2000,
+        speed: 1500,
         slidesToScroll: 1,
         slidesToShow: width < 600 ? 1 : 2,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
         cssEase: "linear",
     }
     return (
