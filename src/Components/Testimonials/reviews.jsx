@@ -5,6 +5,7 @@ import John from "../../assets/images/reviews/john.jpg"
 import Hope from "../../assets/images/reviews/hope.jpg"
 import Kosi from "../../assets/images/reviews/kosi1.jpg"
 import Emma from "../../assets/images/reviews/emma.jpeg"
+import Ilia from "../../assets/images/reviews/ilia.jpeg";
 
 const images = {
     onochie: Onochie,
@@ -12,6 +13,7 @@ const images = {
     hope: Hope,
     emmanuel: Emma,
     kosi: Kosi,
+    ilia: Ilia,
 }
 
 const Reviews = ({name, picture, position, review}) => (
