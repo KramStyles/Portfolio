@@ -7,6 +7,7 @@ import TechStack from "./Components/TechStack";
 import Project from "./Components/Project";
 import Testimonials from "./Components/Testimonials";
 import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
             <TechStack/>
             <Project/>
             <Testimonials/>
+            <Contact/>
         </>
     )
 }
