@@ -1,0 +1,5 @@
+.contact-form .form-control{
+    background-color: var(--bg-main-dark-hover);
+    color: whitesmoke;
+    font-family: Poppins, sans-serif;
+}

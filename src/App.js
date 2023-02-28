@@ -8,6 +8,10 @@ import Project from "./Components/Project";
 import Testimonials from "./Components/Testimonials";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
+import ScrollToTop from "react-scroll-to-top";
+import {CgArrowLongUpE} from "react-icons/cg";
+
+import "./App.css";
 
 const App = () => {
     return (
@@ -20,6 +24,12 @@ const App = () => {
             <Project/>
             <Testimonials/>
             <Contact/>
+            <ScrollToTop
+                smooth={true}
+                component={<CgArrowLongUpE/>}
+                className={"vibrate"}
+                style={{right: 10}}
+            />
         </>
     )
 }

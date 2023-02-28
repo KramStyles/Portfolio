@@ -1,7 +1,8 @@
 import {CgModem} from "react-icons/cg";
 
-import Title from "../Elements/title";
+import "./index.css";
 import Buttons from "../Elements/buttons";
+import Title from "../Elements/title";
 
 const Contact = () => {
     return (
@@ -13,7 +14,7 @@ const Contact = () => {
                 </div>
                 <div className="col-md-8">
                     <div className="glass-morphic-content">
-                        <form>
+                        <form className="contact-form">
                             <div className="mb-3 mt-3">
                                 <input type="text" className="form-control" id="fname" placeholder="Fullname"
                                        name="fname"/>
@@ -28,9 +29,9 @@ const Contact = () => {
                             </div>
                             <div className="mb-3">
                                 <textarea className="form-control" id="message" name="message"
-                                          placeholder="Enter message" rows={5}/>
+                                          placeholder="Message" rows={5}/>
                             </div>
-                            <Buttons btnText="Send Message" btnIcon={<CgModem/>}/>
+                            <Buttons btnText="Send Message" btnIcon={<CgModem/>} />
                         </form>
                     </div>
                 </div>
