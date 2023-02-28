@@ -180,6 +180,16 @@ code {
     .section, .about-section {
         padding: 3.5rem !important;
     }
+    .exp-section{
+        padding: 1rem !important;
+    }
+    .contact-section{
+        padding-left: 2rem !important;
+        padding-right: .5rem !important;
+    }
+    .testimonial-section{
+        padding: 2rem !important;
+    }
 
     .text-behind-dark {
         font-size: 4rem;

@@ -6,7 +6,7 @@ import Title from "../Elements/title";
 
 const Contact = () => {
     return (
-        <div className="container shadow my-shadow-light section bg-linear-dark mb-5" id={"contact"}>
+        <div className="container shadow my-shadow-light section bg-linear-dark mb-5 contact-section" id={"contact"}>
             <Title backgroundTitle="contact" title="Reach Me"/>
             <div className="row mt-3">
                 <div className="col-md-4">
@@ -17,15 +17,15 @@ const Contact = () => {
                         <form className="contact-form">
                             <div className="mb-3 mt-3">
                                 <input type="text" className="form-control" id="fname" placeholder="Fullname"
-                                       name="fname"/>
+                                       name="fname" autoComplete={"no"}/>
                             </div>
                             <div className="mb-3 mt-3">
                                 <input type="email" className="form-control" id="email" placeholder="Enter email"
-                                       name="email"/>
+                                       name="email" autoComplete={'no'}/>
                             </div>
                             <div className="mb-3 mt-3">
                                 <input type="tel" className="form-control" id="phone" placeholder="Mobile (Optional)"
-                                       name="phone"/>
+                                       name="phone" autoComplete={'no'}/>
                             </div>
                             <div className="mb-3">
                                 <textarea className="form-control" id="message" name="message"
