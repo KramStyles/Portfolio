@@ -36,7 +36,7 @@ const ExpList = ({desc, stack}) => {
 const Experience = () => {
 
     return (
-        <div className="container shadow section position-relative">
+        <div className="container shadow section position-relative" id={"experience"}>
             <Title backgroundTitle="work" title="Experience"/>
 
             <VerticalTimeline>

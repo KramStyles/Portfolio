@@ -6,7 +6,7 @@ import Title from "../Elements/title";
 
 const Contact = () => {
     return (
-        <div className="container shadow my-shadow-light section bg-linear-dark mb-5">
+        <div className="container shadow my-shadow-light section bg-linear-dark mb-5" id={"contact"}>
             <Title backgroundTitle="contact" title="Reach Me"/>
             <div className="row mt-3">
                 <div className="col-md-4">

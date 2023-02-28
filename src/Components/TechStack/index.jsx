@@ -17,7 +17,7 @@ const TechStack = () => {
         )))
     }
     return (
-        <div className="container shadow section position-relative">
+        <div className="container shadow section position-relative" id={'tech_stack'}>
             <Title backgroundTitle="skills" title="tech stack"/>
             <div className="row my-5 justify-content-center">
                 {techStack.slice(0, showMoreStack).map((item, index) => {

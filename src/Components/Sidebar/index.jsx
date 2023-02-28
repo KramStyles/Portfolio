@@ -35,10 +35,10 @@ const Sidebar = () => {
                             <NavItems icon={<CgUserList/>} name="about me" hide={!expandSidebar}/>
                             <NavItems icon={<CgUserlane/>} name="experience" hide={!expandSidebar}/>
                             <NavItems icon={<CgTerminal/>} name="tech stack" hide={!expandSidebar}/>
-                            <NavItems icon={<CgStack/>} name="education" hide={!expandSidebar}/>
                             <NavItems icon={<CgTikcode/>} name="projects" hide={!expandSidebar}/>
                             <NavItems icon={<CgTranscript/>} name="testimonial" hide={!expandSidebar}/>
                             <NavItems icon={<CgPhone/>} name="contact" hide={!expandSidebar}/>
+                            {/*<NavItems icon={<CgStack/>} name="education" hide={!expandSidebar}/>*/}
                         </div>
 
                     </div>

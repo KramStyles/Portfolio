@@ -19,7 +19,7 @@ const Testimonials = () => {
         cssEase: "linear",
     }
     return (
-        <div className="container section">
+        <div className="container section" id={"testimonial"}>
             <Title backgroundTitle="reviews" title="What client's say!"/>
             <div className="row mt--5">
                 <Slider {...sliderSettings}>
