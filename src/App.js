@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Home from "./Components/Home";
 import Sidebar from "./Components/Sidebar";
@@ -14,34 +14,38 @@ import { CgArrowLongUpE } from "react-icons/cg";
 import "./App.css";
 
 const App = () => {
-    const [loading, setloading] = useState(true);
+    const [loading, setLoading] = useState(true);
     const preloader = document.querySelector(".my-preloader");
 
-    // setTimeout(() => {
-    //     preloader.style.opacity = "0";
-    //     setloading(true);
-    // }, 2000);
+    useEffect(() => {
+        setTimeout(() => {
+            preloader.style.opacity = "0";
+            setLoading(false)
+        }, 2000)
+}, [])
 
-    return loading ? (
-        null
-    ) : ( 
-        <>
-            <Sidebar />
-            <Home />
-            <About />
-            <Experience />
-            <TechStack />
-            <Project />
-            <Testimonials />
-            <Contact />
-            <ScrollToTop
-                smooth={true}
-                component={<CgArrowLongUpE />}
-                className={"vibrate"}
-                style={{ right: 10 }}
-            />
-        </>
-    )
+
+
+return loading ? (
+    null
+) :(
+    <>
+        <Sidebar />
+        <Home />
+        <About />
+        <Experience />
+        <TechStack />
+        <Project />
+        <Testimonials />
+        <Contact />
+        <ScrollToTop
+            smooth={true}
+            component={<CgArrowLongUpE />}
+            className={"vibrate"}
+            style={{ right: 10 }}
+        />
+    </>
+)
 
 }
 
