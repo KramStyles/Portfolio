@@ -30,7 +30,7 @@ const Reviews = ({name, picture, position, review}) => (
                 <CgLivePhoto size={30}/>
             </div>
             <div className={"text-center"}>
-                <p className={"fs-7 text-white fw-bold poppins mt-3"}>{review}</p>
+                <p className={"fs-77 text-white fw-bold poppins mt-3"}>{review}</p>
                 <CgTally className={"tally"} size={20}/>
             </div>
         </div>

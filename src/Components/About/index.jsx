@@ -3,7 +3,7 @@ import Image from "../../assets/images/mark.JPG";
 
 const About = () => {
     return (
-        <div className="container my-shadow-light about-section mt--5 mb-5 rounded bg-linear-dark">
+        <div className="container my-shadow-light about-section mt--5 mb-5 rounded bg-linear-dark" id={'about_me'}>
             <div className="row align-items-center">
                 <div className="col-md-6 mb--sm-2">
                     <img src={Image} alt="Mark Eke" className="rounded my-shadow-image-light my-image" width="90%"/>

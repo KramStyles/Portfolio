@@ -17,7 +17,7 @@ const Project = () => {
         slidesToShow: width < 800 ? 1 : width < 1000 ? 2 : 3,
     }
     return (
-        <div className="container my-shadow-light section bg-linear-dark">
+        <div className="container my-shadow-light section bg-linear-dark" id={'projects'}>
             <Title backgroundTitle="projects" title="what i've done"/>
             <div className="row mt--5">
 
