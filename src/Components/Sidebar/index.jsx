@@ -3,7 +3,6 @@ import {
     CgEditUnmask,
     CgPhone,
     CgPushChevronRight,
-    CgStack,
     CgTerminal,
     CgTikcode,
     CgTranscript,
