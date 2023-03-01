@@ -31,7 +31,7 @@ const Contact = () => {
                                 <textarea className="form-control" id="message" name="message"
                                           placeholder="Message" rows={5}/>
                             </div>
-                            <Buttons btnText="Send Message" btnIcon={<CgModem/>} />
+                            <Buttons btnText="Send Message" btnIcon={<CgModem/>}/>
                         </form>
                     </div>
                 </div>
