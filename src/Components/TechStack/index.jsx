@@ -6,7 +6,7 @@ import Title from "../Elements/title";
 import Buttons from "../Elements/buttons";
 
 const TechStack = () => {
-    const [showMoreStack, setShowMoreStack] = useState(9);
+    const [showMoreStack, setShowMoreStack] = useState(6);
     const techStack = [
         "HTML", "CSS", "Python", "JavaScript", "React Js", "Django", "Django Rest", "Flask", "CI/CD",
         "PostgreSQL", "MySQL", "SQlite3", "Docker", "AJAX", "Angular Js", "TypeScript", "JQuery",
