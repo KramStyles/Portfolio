@@ -21,7 +21,7 @@ const App = () => {
         setTimeout(() => {
             preloader.style.opacity = "0";
             setLoading(false)
-            preloader.style.transform = "translateX(-100%)";
+            preloader.style.transform = "translateY(100%)";
         }, 2000)
     }, [preloader.style])
 
