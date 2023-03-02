@@ -25,6 +25,11 @@ const Sidebar = () => {
         setShowSidebar(!showSidebar)
     )
 
+    // To ensure that menu hides when user touches the screen
+    // document.getElementById("main").addEventListener('click', function(){
+    //     console.log('hello');
+    // })
+
     return (
         <>
             <div className="ham-menu text-end">

@@ -32,13 +32,15 @@ const App = () => {
     ) : (
         <>
             <Sidebar />
-            <Home />
-            <About />
-            <Experience />
-            <TechStack />
-            <Project />
-            <Testimonials />
-            <Contact />
+            <main id="main">
+                <Home />
+                <About />
+                <Experience />
+                <TechStack />
+                <Project />
+                <Testimonials />
+                <Contact />
+            </main>
             <ScrollToTop
                 smooth={true}
                 component={<CgArrowLongUpE />}
