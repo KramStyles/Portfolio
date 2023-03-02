@@ -21,31 +21,32 @@ const App = () => {
         setTimeout(() => {
             preloader.style.opacity = "0";
             setLoading(false)
+            preloader.style.transform = "translateX(-100%)";
         }, 2000)
-}, [])
+    }, [preloader.style])
 
 
 
-return loading ? (
-    null
-) :(
-    <>
-        <Sidebar />
-        <Home />
-        <About />
-        <Experience />
-        <TechStack />
-        <Project />
-        <Testimonials />
-        <Contact />
-        <ScrollToTop
-            smooth={true}
-            component={<CgArrowLongUpE />}
-            className={"vibrate"}
-            style={{ right: 10 }}
-        />
-    </>
-)
+    return loading ? (
+        null
+    ) : (
+        <>
+            <Sidebar />
+            <Home />
+            <About />
+            <Experience />
+            <TechStack />
+            <Project />
+            <Testimonials />
+            <Contact />
+            <ScrollToTop
+                smooth={true}
+                component={<CgArrowLongUpE />}
+                className={"vibrate"}
+                style={{ right: 10 }}
+            />
+        </>
+    )
 
 }
 
