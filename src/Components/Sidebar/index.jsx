@@ -7,7 +7,7 @@ import {
     CgTikcode,
     CgTranscript,
     CgUserlane,
-    CgUserList, 
+    CgUserList,
     CgController
 } from "react-icons/cg";
 
@@ -17,16 +17,22 @@ import NavItems from "./NavItems";
 
 const Sidebar = () => {
     const [expandSidebar, setExpandSidebar] = useState(false);
+    const [showSidebar, setShowSidebar] = useState(false)
     const toggleSidebar = () => (
         setExpandSidebar(!expandSidebar)
+    )
+    const ShowSidebar = () => (
+        setShowSidebar(!showSidebar)
     )
 
     return (
         <>
             <div className="ham-menu text-end">
-                <CgController size={35} color={'white'} className="vibrate"/>
+                <div className="vibrate">
+                <CgController size={35} color={'white'} className={`${showSidebar ? "flip--540" : "reverse-transition"}`} onClick={ShowSidebar} />
+                </div>
             </div>
-            <div className={`sidebar-section ${expandSidebar ? "sidebar-expand" : ""}`}>
+            <div className={`sidebar-section ${expandSidebar ? "sidebar-expand" : ""} ${showSidebar ? "trans-in" : "trans-out"}`}>
                 <div className="toggle-sidebar fw-bold text-white py-4 vibrate" onClick={toggleSidebar}>
                     <CgPushChevronRight size={20} className={`${expandSidebar ? "flip--540" : "reverse-transition"}`} />
                 </div>
