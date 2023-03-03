@@ -7,3 +7,21 @@
 .hero a:hover .btn-icon{
     padding-left: 1rem;
 }
+
+.theme {
+    background-color: white;
+    right: 10px;
+    top: 40px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+    border: none;
+    color: black;
+}
+.theme svg{
+    font-size: 25px;
+}

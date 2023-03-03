@@ -2,9 +2,9 @@ import Typewriter from 'typewriter-effect'
 
 import "./index.css";
 import Resume from "../../assets/MARK EKE - Resume.pdf"
-import {CgAbstract, CgTranscript} from "react-icons/cg";
+import {CgAbstract, CgTranscript, CgSun, CgMoon} from "react-icons/cg";
 
-const Home = () => {
+const Home = ({theme, changeTheme}) => {
     const positions = [
         "Fullstack (React - Django)",
         "Backend (Django, Flask)",
@@ -25,6 +25,10 @@ const Home = () => {
                 <a href={Resume} className="btn btn-light btn-sm fw-bold"
                    download="Mark Eke Resume - Best Hire.pdf">Resume <span
                     className="btn-icon transit-fast"><CgTranscript/></span></a>
+            </div>
+            <div className={`theme d-flex justify-content-center align-items-center`}
+                onClick={changeTheme}>
+                {theme === "dark" ? <CgMoon /> : <CgSun/>}
             </div>
         </div>
     )

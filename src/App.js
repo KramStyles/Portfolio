@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 import Home from "./Components/Home";
 import Sidebar from "./Components/Sidebar";
@@ -13,9 +13,17 @@ import { CgArrowLongUpE } from "react-icons/cg";
 
 import "./App.css";
 
+export const ThemeContext = createContext(null);
+
 const App = () => {
     const [loading, setLoading] = useState(true);
+    const [theme, setTheme] = useState("dark")
+
     const preloader = document.querySelector(".my-preloader");
+
+    const changeTheme = () => {
+        setTheme((prev)=> (prev === "dark" ? "light" : "dark"));
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,15 +40,15 @@ const App = () => {
     ) : (
         <>
             <Sidebar />
-            <main id="main">
-                <Home />
+            <ThemeContext.Provider value={{theme, changeTheme}}>
+                <Home theme={theme} changeTheme={changeTheme}/>
                 <About />
                 <Experience />
                 <TechStack />
                 <Project />
                 <Testimonials />
                 <Contact />
-            </main>
+            </ThemeContext.Provider>
             <ScrollToTop
                 smooth={true}
                 component={<CgArrowLongUpE />}
