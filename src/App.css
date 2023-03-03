@@ -21,6 +21,42 @@
   background-color: grey;
 }
 
+.logo-spin{
+  animation: App-logo-spin 2s linear infinite;
+}
+
+#dark, #light{
+  transition: var(--transit-fast);
+}
+
+
+/* 
+  seasalt - f9f8f8
+  anti-flash - e5ebea
+  rhyme-white - foeeed
+
+  cool gray - 7e7f9a
+  raisin black - 272838
+  rhyme-black - 332C39
+*/
+
+:root{
+--cl-seasalt : #f9f8f8;
+--cl-anti-flash : #e5ebea;
+--cl-rhyme-white : #f0eeed;
+--cl-cool-gray : #7e7f9a;
+--cl-raisin-black : #272838;
+--cl-rhyme-black : #332C39;
+}
+
+#light{
+  background-color: #e5ebea;
+}
+
+#light .hero{
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
