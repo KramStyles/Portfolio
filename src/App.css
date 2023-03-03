@@ -21,6 +21,10 @@
   background-color: grey;
 }
 
+.logo-spin{
+  animation: App-logo-spin 2s linear infinite;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

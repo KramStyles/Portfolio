@@ -146,4 +146,9 @@
       background-color: var(--bg-main-dark);
       z-index: 1000;
     }
+
+    .theme-sm{
+      top: auto;
+      right: auto;
+    }
 }

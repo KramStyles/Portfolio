@@ -26,9 +26,9 @@ const Home = ({theme, changeTheme}) => {
                    download="Mark Eke Resume - Best Hire.pdf">Resume <span
                     className="btn-icon transit-fast"><CgTranscript/></span></a>
             </div>
-            <div className={`theme d-flex justify-content-center align-items-center`}
+            <div className={`theme theme-lg d-flex justify-content-center align-items-center bg-${theme === "dark" ? "light" : "dark"}`}
                 onClick={changeTheme}>
-                {theme === "dark" ? <CgMoon /> : <CgSun/>}
+                {theme === "dark" ? <CgMoon /> : <CgSun className='logo-spin text-white'/>}
             </div>
         </div>
     )

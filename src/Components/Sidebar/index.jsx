@@ -8,14 +8,16 @@ import {
     CgTranscript,
     CgUserlane,
     CgUserList,
-    CgController
+    CgController,
+    CgSun,
+    CgMoon
 } from "react-icons/cg";
 
 import "./index.css";
 import MarkLogo from "../../assets/images/mark.png";
 import NavItems from "./NavItems";
 
-const Sidebar = () => {
+const Sidebar = ({ theme, changeTheme }) => {
     const [expandSidebar, setExpandSidebar] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false)
     const toggleSidebar = () => (
@@ -33,8 +35,12 @@ const Sidebar = () => {
     return (
         <>
             <div className="ham-menu text-end">
+                <span className={`theme theme-sm d-flex justify-content-center align-items-center bg-${theme === "dark" ? "light" : "dark"}`}
+                    onClick={changeTheme}>
+                    {theme === "dark" ? <CgMoon /> : <CgSun className='logo-spin text-white' />}
+                </span>
                 <div className="vibrate">
-                <CgController size={35} color={'white'} className={`${showSidebar ? "flip--540" : "reverse-transition"}`} onClick={ShowSidebar} />
+                    <CgController size={35} color={'white'} className={`${showSidebar ? "flip--540" : "reverse-transition"}`} onClick={ShowSidebar} />
                 </div>
             </div>
             <div className={`sidebar-section ${expandSidebar ? "sidebar-expand" : ""} ${showSidebar ? "trans-in" : "trans-out"}`}>

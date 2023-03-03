@@ -38,9 +38,9 @@ const App = () => {
     return loading ? (
         null
     ) : (
-        <>
-            <Sidebar />
-            <ThemeContext.Provider value={{theme, changeTheme}}>
+        <ThemeContext.Provider value={{theme, changeTheme}}>
+            <main id={theme}>
+                <Sidebar theme={theme} changeTheme={changeTheme}/>
                 <Home theme={theme} changeTheme={changeTheme}/>
                 <About />
                 <Experience />
@@ -48,14 +48,14 @@ const App = () => {
                 <Project />
                 <Testimonials />
                 <Contact />
-            </ThemeContext.Provider>
+            </main>
             <ScrollToTop
                 smooth={true}
                 component={<CgArrowLongUpE />}
                 className={"vibrate"}
                 style={{ right: 10 }}
             />
-        </>
+        </ThemeContext.Provider>
     )
 
 }
