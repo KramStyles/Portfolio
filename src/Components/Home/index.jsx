@@ -26,8 +26,8 @@ const Home = ({ theme, changeTheme }) => {
                     spy={true}
                     duration={400}
                     smooth={true}>
-                    <a className="btn btn-outline-light btn-sm me-3">Contact Me <span
-                        className="btn-icon transit-fast"><CgAbstract /></span></a>
+                    <button className="btn btn-outline-light btn-sm me-3">Contact Me <span
+                        className="btn-icon transit-fast"><CgAbstract /></span></button>
                 </Link>
                 <a href={Resume} className="btn btn-light btn-sm fw-bold"
                     download="Mark Eke Resume - Best Hire.pdf">Resume <span
